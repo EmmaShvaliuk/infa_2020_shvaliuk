@@ -25,9 +25,9 @@ def draw_ellipse_angle(surface, color, rect, angle, width=0):
     rotated_surf = pygame.transform.rotate(shape_surf, angle)
     surface.blit(rotated_surf, rotated_surf.get_rect(center = target_rect.center))
 
-def BIRDS(x, y, alpha=1): #alpha defines the size of the bird
-    draw_ellipse_angle(screen, birds, [x - 12.5*alpha, y, 40*alpha, 10*alpha], -35)
-    draw_ellipse_angle(screen, birds, [x + 12.5*alpha, y - 2*alpha, 43*alpha, 10*alpha], 50)
+def BIRDS(x, y, alpha=1): 
+    draw_ellipse_angle(screen, (0,0,0), [x - 12.5*alpha, y, 40*alpha, 10*alpha], -35)
+    draw_ellipse_angle(screen, (0,0,0), [x + 12.5*alpha, y - 2*alpha, 43*alpha, 10*alpha], 50)
 
 BIRDS(130, 140, 0.4)
 BIRDS(150, 150, 0.4)
